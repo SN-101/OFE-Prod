@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site.title">OFE Production</title>
+    <meta name="description" content="Professional photography services - events, portraits, commercial">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#home" data-i18n="site.title">OFE Production</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#home" role="menuitem" data-i18n="nav.home">Home</a></li>
+                <li role="none"><a href="#portfolio" role="menuitem" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li role="none"><a href="#services" role="menuitem" data-i18n="nav.services">Services</a></li>
+                <li role="none"><a href="#about" role="menuitem" data-i18n="nav.about">About</a></li>
+                <li role="none"><a href="#contact" role="menuitem" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+
+            <!-- Controls -->
+            <div class="nav-controls">
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <button class="language-btn" aria-label="Select language" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="current-lang">EN</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <ul class="language-dropdown" role="menu" aria-label="Language options">
+                        <li><button role="menuitem" data-lang="en">English</button></li>
+                        <li><button role="menuitem" data-lang="ar">العربية</button></li>
+                        <li><button role="menuitem" data-lang="fr">Français</button></li>
+                    </ul>
+                </div>
+
+                <!-- Dark Mode Toggle -->
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="m21 12.79c-.83 3.17-3.59 5.68-6.87 6.07a7.5 7.5 0 0 1-8.08-8.08 7.5 7.5 0 0 1 6.07-6.87c.4-.09.8-.13 1.21-.13.93 0 1.84.18 2.67.53z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero.title">Photos and Videos that tell your story</h1>
+            <p data-i18n="hero.subtitle">Professional photography — events, portraits, commercial</p>
+            <button href="#contact" class="cta-button" data-i18n="hero.cta">Book a session</button>
+        </div>
+        <div class="hero-image">
+            <!-- Replace this URL with actual hero image -->
+            <img src="files/OFE_PROD.webp" alt="Professional photographer at work" loading="lazy">
+        </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 data-i18n="services.title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3 data-i18n="services.events">Event Photography</h3>
+                    <p data-i18n="services.eventsDesc">Capturing your special moments with artistic vision and
+                        professional quality.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👤</div>
+                    <h3 data-i18n="services.portrait">Portrait Sessions</h3>
+                    <p data-i18n="services.portraitDesc">Personal and professional portraits that highlight your unique
+                        personality.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3 data-i18n="services.commercial">Commercial Photography</h3>
+                    <p data-i18n="services.commercialDesc">High-quality images for your business, products, and
+                        marketing needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎉</div>
+                    <h3 data-i18n="services.opening">Opening Photography</h3>
+                    <p data-i18n="services.openingDesc">Filming store openings and making the video in the best quality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 data-i18n="nav.portfolio">Portfolio</h2>
+            <div class="portfolio-grid">
+                <!-- Replace these URLs with actual portfolio images -->
+                <div class="portfolio-item" data-category="events">
+                    <img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=1"
+                        alt="Wedding photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <button class="portfolio-btn" aria-label="View image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portrait">
+                    <img src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=1"
+                        alt="Portrait photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <button class="portfolio-btn" aria-label="View image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=1"
+                        alt="Commercial photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <button class="portfolio-btn" aria-label="View image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="events">
+                    <img src="https://images.pexels.com/photos/1157394/pexels-photo-1157394.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=1"
+                        alt="Event photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <button class="portfolio-btn" aria-label="View image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portrait">
+                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=1"
+                        alt="Portrait session" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <button class="portfolio-btn" aria-label="View image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="https://images.pexels.com/photos/792199/pexels-photo-792199.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=1"
+                        alt="Product photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <button class="portfolio-btn" aria-label="View image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Replace with actual photographer image -->
+                    <img src="files/profile.webp" alt="Photographer portrait" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h2 data-i18n="about.title">About the Photographer</h2>
+                    <p data-i18n="about.description">With over 8 years of experience in professional photography, I
+                        specialize in capturing authentic moments that tell compelling stories. My passion lies in
+                        creating images that evoke emotion and preserve memories for a lifetime.</p>
+                    <p data-i18n="about.experience">From intimate portraits to grand celebrations, I bring a unique
+                        artistic vision combined with technical expertise to every project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-i18n="contact.title">Get in touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3 data-i18n="contact.email">Email</h3>
+                            <p>info@ofeproduction.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3 data-i18n="contact.phone">Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3 data-i18n="contact.location">Location</h3>
+                            <p data-i18n="contact.address">New York, NY</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" requiredplaceholder="Full name"
+                            data-i18n-placeholder="contact.namePlaceholder">
+                        <label for="name" data-i18n="contact.namePlaceholder">Full name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" requiredplaceholder="Email address"
+                            data-i18n-placeholder="contact.emailPlaceholder">
+                        <label for="email" data-i18n="contact.emailPlaceholder">Email address</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" requiredplaceholder="Your message"
+                            data-i18n-placeholder="contact.messagePlaceholder"></textarea>
+                        <label for="message" data-i18n="contact.messagePlaceholder">Your message</label>
+                    </div>
+                    <button type="submit" class="submit-btn" data-i18n="contact.sendButton">Send</button>
+                </form>
+            </div>
+
+            <!-- Success message -->
+            <div class="success-message" id="successMessage" style="display: none;">
+                <div class="success-content">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"></polyline>
+                    </svg>
+                    <h3 data-i18n="contact.successTitle">Message sent successfully!</h3>
+                    <p data-i18n="contact.successMessage">Thank you for reaching out. I'll get back to you soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.rights">All rights reserved © OFÉ Production</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <img src="" alt="" id="lightbox-image">
+            <div class="lightbox-navigation">
+                <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+                <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+            </div>
+        </div>
+        <div class="lightbox-backdrop"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
